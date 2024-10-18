@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Blogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #2d7d36;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .blog-title {
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .post {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .post:hover {
+            transform: translateY(-8px);
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            margin-bottom: 12px;
+            color: #666;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta button {
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #388e3c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Inspiring Stories & Ideas</h1>
+        </header>
+
+        <section class="blog-posts">
+            <div class="post">
+                <img src="images/skating.webp" height="1200px">
+                <h2>The Art of Sustainable Living</h2>
+                <p>Explore practical ways to adopt a sustainable lifestyle...</p>
+            </div>
+            <div class="post">
+               <img src="images/Laptop.jpeg" height="1200px">
+                <h2>From Dreams to Reality: A Traveler's Diary</h2>
+                <p>Follow a solo traveler’s journey across continents...</p>
+            </div>
+            <div class="post">
+               <img src="images/Friends.avif" height="1200px">
+                <h2>Transforming Workspaces: Remote Innovation</h2>
+                <p>How companies are redefining workspaces remotely...</p>
+            </div>
+            <div class="post">
+               <img src="images/Cycle.jpg" height="1200px">
+                <h2>Healthy Mind, Happy Life: A Mental Wellness Guide</h2>
+                <p>Learn key strategies to enhance mental well-being...</p>
+            </div>
+            <div class="post">
+                <img src="images/Buildings.webp" height="1200px">
+                <h2>The Evolution of Digital Art</h2>
+                <p>Dive into the world of NFTs and modern creativity...</p>
+            </div>
+            <div class="post">
+                <img src="images/Beach.jpg" height="1200px">
+                <h2>Reviving Old Recipes with a Modern Twist</h2>
+                <p>A chef’s take on forgotten flavors and new techniques...</p>
+            </div>
+        </section>
+
+        <div class="cta">
+            <h3>Let's make something meaningful together.</h3>
+            <button>Explore More Blogs</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Mussab  Abdullah</p>
+            <p><a href="#">Contact Me</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
